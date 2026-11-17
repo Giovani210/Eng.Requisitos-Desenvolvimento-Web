@@ -1,0 +1,205 @@
+.pagina.pagina-tabela {
+  max-width: 960px;
+}
+
+
+.tabela-wrapper {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 1rem;
+}
+
+th,
+td {
+  padding: 12px 14px;
+  text-align: center;
+  border-bottom: 1px solid #cbd5e1;
+}
+
+
+th:first-child,
+td:first-child {
+  text-align: left;
+}
+
+thead th {
+  color: #ffffff;
+  background-color: #1e3a8a;
+}
+
+
+tbody th {
+  font-weight: 600;
+  color: #1e3a8a;
+  white-space: nowrap;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f1f5f9;
+}
+
+tbody tr:hover {
+  background-color: #dbeafe;
+}
+
+
+.botao-voltar {
+  display: inline-block;
+  min-width: 220px;
+  margin-top: 2rem;
+  padding: 12px 32px;
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #ffffff;
+  text-decoration: none;
+  background-color: #1e3a8a;
+  border: 2px solid #1e3a8a;
+  border-radius: 8px;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.botao-voltar:hover,
+.botao-voltar:focus {
+  background-color: #ffffff;
+  color: #1e3a8a;
+}
+
+
+.col-acao {
+  width: 1%;
+  white-space: nowrap;
+  text-align: center;
+}
+
+.linha-vazia td {
+  padding: 24px 14px;
+  text-align: center;
+  color: #475569;
+  font-style: italic;
+}
+
+.botao-remover {
+  padding: 6px 14px;
+  font-family: inherit;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #b91c1c;
+  background-color: #ffffff;
+  border: 2px solid #b91c1c;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.botao-remover:hover,
+.botao-remover:focus {
+  background-color: #b91c1c;
+  color: #ffffff;
+}
+
+
+.form-adicionar {
+  margin-top: 2rem;
+  padding: 20px;
+  text-align: left;
+  border: 2px solid #cbd5e1;
+  border-radius: 8px;
+}
+
+.form-adicionar h2 {
+  margin-bottom: 16px;
+  font-size: 1.2rem;
+  color: #1e3a8a;
+}
+
+.form-adicionar .campos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 14px;
+}
+
+.form-adicionar .campo {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.form-adicionar label {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #1e293b;
+}
+
+.form-adicionar input,
+.form-adicionar select {
+  padding: 8px 10px;
+  font-family: inherit;
+  font-size: 1rem;
+  color: #1e293b;
+  background-color: #ffffff;
+  border: 2px solid #1e3a8a;
+  border-radius: 6px;
+}
+
+.form-adicionar input:focus,
+.form-adicionar select:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(30, 58, 138, 0.3);
+}
+
+.acoes-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 18px;
+}
+
+.botao-primario,
+.botao-secundario {
+  padding: 10px 24px;
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #ffffff;
+  background-color: #1e3a8a;
+  border: 2px solid #1e3a8a;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.botao-secundario {
+  color: #1e3a8a;
+  background-color: #ffffff;
+}
+
+.botao-primario:hover,
+.botao-primario:focus {
+  color: #1e3a8a;
+  background-color: #ffffff;
+}
+
+.botao-secundario:hover,
+.botao-secundario:focus {
+  color: #ffffff;
+  background-color: #1e3a8a;
+}
+
+.mensagem {
+  min-height: 1.4em;
+  margin-top: 12px;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.mensagem.ok {
+  color: #166534;
+}
+
+.mensagem.erro {
+  color: #b91c1c;
+}
