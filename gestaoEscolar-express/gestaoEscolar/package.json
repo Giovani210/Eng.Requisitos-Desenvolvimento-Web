@@ -1,0 +1,17 @@
+{
+  "name": "gestao-escolar",
+  "version": "2.0.0",
+  "description": "Sistema de Gerenciamento Escolar — Express.js servindo o front-end (estrutura monolítica)",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js"
+  },
+  "dependencies": {
+    "express": "^5.3.0"
+  },
+  "private": true,
+  "engines": {
+    "node": ">=18"
+  }
+}
